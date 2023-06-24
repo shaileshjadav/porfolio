@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
-                href="#home"
+                href="/#home"
                 className={`dark:text-white underline-offset-4 ${
                   isSticky ? "text-gray-600" : "text-teal-600"
                 } ${activeSection === "1" ? "underline" : ""}`}
@@ -50,7 +50,7 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                href="#work"
+                href="/#work"
                 className={`dark:text-white underline-offset-4 ${
                   isSticky ? "text-gray-600" : "text-teal-600"
                 } ${activeSection === "2" ? "underline" : ""}`}
@@ -59,7 +59,7 @@ const Navbar = () => {
                 My Work
               </Link>
               <Link
-                href="#aboutme"
+                href="/#aboutme"
                 className={`dark:text-white underline-offset-4 ${
                   isSticky ? "text-gray-600" : "text-teal-600"
                 } ${activeSection === "3" ? "underline" : ""}`}
