@@ -46,8 +46,8 @@ const PortFolioSection = () => {
           </h3>
         </div>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          {portfolioItems.map((item) => (
-            <div className="basis-1/3 flex-1 ">
+          {portfolioItems.map((item, index) => (
+            <div className="basis-1/3 flex-1 " key={index}>
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -63,7 +63,7 @@ const PortFolioSection = () => {
                   </h6>
                 </div>
                 <div className="mt-2 justify-end">
-                  <div class="flex justify-end items-center">
+                  <div className="flex justify-end items-center">
                     {item.liveLink && (
                       <a
                         className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
