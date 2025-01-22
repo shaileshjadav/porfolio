@@ -1,13 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useThemeContext } from "../Theme";
+import ThemeToggle from "./ui/ThemeToggle";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("1");
-  const [theme, setTheme] = useThemeContext();
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -33,10 +31,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <BsFillMoonStarsFill
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className=" cursor-pointer text-2xl "
-            />
+            <ThemeToggle/>
           </div>
           <div className="md:block">
             <div className="ml-10 flex items-baseline space-x-4">
