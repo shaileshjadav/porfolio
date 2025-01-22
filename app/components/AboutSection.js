@@ -25,7 +25,7 @@ const AboutSection = () => {
           <div className="w-1/2">
             {/* Left column content */}
             <div className="mb-8">
-              <p className="text-gray-700  dark:text-white">
+              <p className="">
                 Innovative, task-driven professional with 5.5+ year of
                 well-rounded experience in development of backend and frontend
                 for dynamic database driven websites across diverse Industries.
@@ -37,7 +37,7 @@ const AboutSection = () => {
               <h2 className="text-2xl font-bold mb-4  dark:text-white">
                 Contact
               </h2>
-              <ul className="text-gray-700  dark:text-white">
+              <ul className="">
                 <li className="flex items-center mb-2">
                   <AiOutlineMail className="mr-2" />
                   <span>
@@ -68,11 +68,11 @@ const AboutSection = () => {
           <div className="w-1/2">
             {/* Right column content */}
             <h2 className="text-2xl font-bold mb-4  dark:text-white">Skills</h2>
-            <ul className="text-gray-700  dark:text-white">
+            <ul className="">
               {skills.map((skill, index) => (
                 <li key={index} className="flex items-center mb-4">
                   <div className="w-2/5">{skill.name}</div>
-                  <div className="w-3/5 bg-gray-200 rounded">
+                  <div className="w-3/5 bg-white-200 rounded">
                     <div
                       className="h-2 bg-blue-500 rounded"
                       style={{ width: `${skill.percentage}%` }}

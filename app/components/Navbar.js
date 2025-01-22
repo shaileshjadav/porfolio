@@ -25,8 +25,8 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`py-2 mb-12 dark:text-white fixed w-full px-0 z-10 top-0 transition-all duration-300 dark:bg-gray-900  ${
-        isSticky ? "bg-teal-400 dark:bg-teal-900 shadow-lg" : ""
+      className={`py-2 mb-12 fixed w-full px-0 z-10 top-4 px-8 transition-all duration-300 rounded-2xl backdrop-blur-[10px]  ${
+        isSticky ? "shadow-lg" : ""
       }`}
       id="header"
     >
@@ -43,7 +43,7 @@ const Navbar = () => {
               <Link
                 href="/#home"
                 className={`dark:text-white underline-offset-4 ${
-                  isSticky ? "text-gray-600" : "text-teal-600"
+                  isSticky ? "" : ""
                 } ${activeSection === "1" ? "underline" : ""}`}
                 onClick={() => setActiveSection("1")}
               >
@@ -52,7 +52,7 @@ const Navbar = () => {
               <Link
                 href="/#work"
                 className={`dark:text-white underline-offset-4 ${
-                  isSticky ? "text-gray-600" : "text-teal-600"
+                  isSticky ? "" : ""
                 } ${activeSection === "2" ? "underline" : ""}`}
                 onClick={() => setActiveSection("2")}
               >
@@ -61,7 +61,7 @@ const Navbar = () => {
               <Link
                 href="/#aboutme"
                 className={`dark:text-white underline-offset-4 ${
-                  isSticky ? "text-gray-600" : "text-teal-600"
+                  isSticky ? "" : ""
                 } ${activeSection === "3" ? "underline" : ""}`}
                 onClick={() => setActiveSection("3")}
               >

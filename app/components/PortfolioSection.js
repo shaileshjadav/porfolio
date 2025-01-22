@@ -86,7 +86,7 @@ const PortFolioSection = () => {
                 </div>
               </div>
 
-              <p className="text-sm py-5 leading-8 text-gray-700 dark:text-gray-200 max-w-xl md:text-xl">
+              <p className="text-sm py-5 leading-8 max-w-xl md:text-xl">
                 {item.description} <br />
                 <b>Tech:</b> {item.techlogies}
               </p>
